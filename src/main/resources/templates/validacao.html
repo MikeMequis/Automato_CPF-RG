@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultado</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .valid { color: green; }
+        .invalid { color: red; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="blue lighten-1">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Resultado da Verificação</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 offset-m3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Resultado</span>
+                            <p>CPF/RG informado: <strong th:text="${cpf_rg}"></strong></p>
+                            <p th:if="${valido}" class="valid">CPF/RG válido!</p>
+                            <p th:unless="${valido}" class="invalid">CPF/RG inválido!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="/" class="btn waves-effect waves-light">Voltar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts do Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            M.AutoInit(); // Inicializa componentes do Materialize
+        });
+    </script>
+</body>
+</html>
