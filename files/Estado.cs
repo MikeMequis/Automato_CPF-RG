@@ -1,0 +1,36 @@
+namespace ValidadorCPFRG
+{
+    public enum Estado
+    {
+        Inicio,
+        RG_Digito1,
+        RG_Digito2,
+        RG_Ponto1,
+        RG_Digito3,
+        RG_Digito4,
+        RG_Digito5,
+        RG_Ponto2,
+        RG_Digito6,
+        RG_Digito7,
+        RG_Digito8,
+        RG_Traco,
+        RG_Digito9,
+        RG_Final,
+        CPF_Digito1,
+        CPF_Digito2,
+        CPF_Digito3,
+        CPF_Ponto1,
+        CPF_Digito4,
+        CPF_Digito5,
+        CPF_Digito6,
+        CPF_Ponto2,
+        CPF_Digito7,
+        CPF_Digito8,
+        CPF_Digito9,
+        CPF_Traco,
+        CPF_Digito10,
+        CPF_Digito11,
+        CPF_Final,
+        Invalido
+    }
+}

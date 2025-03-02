@@ -1,0 +1,379 @@
+{
+  "projectType": "FSA",
+  "_id": "f5280f75-9095-4a0e-ac8e-29e808216c05",
+  "states": [
+    {
+      "x": 315,
+      "y": 285,
+      "id": 0,
+      "isFinal": false
+    },
+    {
+      "x": 615,
+      "y": 285,
+      "id": 1,
+      "isFinal": false
+    },
+    {
+      "x": 900,
+      "y": 285,
+      "id": 2,
+      "isFinal": false
+    },
+    {
+      "x": 900,
+      "y": 165,
+      "id": 3,
+      "isFinal": false
+    },
+    {
+      "x": 1185,
+      "y": 285,
+      "id": 4,
+      "isFinal": false
+    },
+    {
+      "x": 1185,
+      "y": 405,
+      "id": 5,
+      "isFinal": false
+    },
+    {
+      "x": 1185,
+      "y": 165,
+      "id": 6,
+      "isFinal": false
+    },
+    {
+      "x": 1470,
+      "y": 165,
+      "id": 7,
+      "isFinal": false
+    },
+    {
+      "x": 1755,
+      "y": 165,
+      "id": 8,
+      "isFinal": false
+    },
+    {
+      "x": 1470,
+      "y": 405,
+      "id": 9,
+      "isFinal": false
+    },
+    {
+      "x": 1755,
+      "y": 405,
+      "id": 10,
+      "isFinal": false
+    },
+    {
+      "x": 2160,
+      "y": 405,
+      "id": 11,
+      "isFinal": false
+    },
+    {
+      "x": 1875,
+      "y": 165,
+      "id": 12,
+      "isFinal": false
+    },
+    {
+      "x": 1470,
+      "y": 285,
+      "id": 13,
+      "isFinal": false
+    },
+    {
+      "x": 1755,
+      "y": 285,
+      "id": 14,
+      "isFinal": false
+    },
+    {
+      "x": 2160,
+      "y": 285,
+      "id": 15,
+      "isFinal": false
+    },
+    {
+      "x": 2160,
+      "y": 165,
+      "id": 16,
+      "isFinal": false
+    },
+    {
+      "x": 2925,
+      "y": 285,
+      "id": 17,
+      "isFinal": false
+    },
+    {
+      "x": 2595,
+      "y": 165,
+      "id": 18,
+      "isFinal": false
+    },
+    {
+      "x": 2595,
+      "y": 285,
+      "id": 19,
+      "isFinal": false
+    },
+    {
+      "x": 2925,
+      "y": 165,
+      "id": 20,
+      "isFinal": false
+    },
+    {
+      "x": 3240,
+      "y": 165,
+      "id": 21,
+      "isFinal": true
+    },
+    {
+      "x": 3240,
+      "y": 285,
+      "id": 22,
+      "isFinal": true
+    },
+    {
+      "x": 2295,
+      "y": 405,
+      "id": 23,
+      "isFinal": false
+    },
+    {
+      "x": 2595,
+      "y": 405,
+      "id": 24,
+      "isFinal": false
+    },
+    {
+      "x": 3615,
+      "y": 285,
+      "id": 25,
+      "isFinal": false
+    },
+    {
+      "x": 3420,
+      "y": 495,
+      "id": 26,
+      "isFinal": false
+    },
+    {
+      "x": 3900,
+      "y": 285,
+      "id": 27,
+      "isFinal": true
+    }
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "id": 0,
+      "read": "0123456789"
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "id": 1,
+      "read": "0123456789"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "id": 2,
+      "read": "."
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "id": 3,
+      "read": "0123456789"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "id": 4,
+      "read": "."
+    },
+    {
+      "from": 3,
+      "to": 6,
+      "id": 5,
+      "read": "0123456789"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "id": 6,
+      "read": "0123456789"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "id": 7,
+      "read": "0123456789"
+    },
+    {
+      "from": 5,
+      "to": 9,
+      "id": 8,
+      "read": "0123456789"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "id": 9,
+      "read": "0123456789"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "id": 10,
+      "read": "0123456789"
+    },
+    {
+      "from": 8,
+      "to": 12,
+      "id": 11,
+      "read": "."
+    },
+    {
+      "from": 4,
+      "to": 13,
+      "id": 12,
+      "read": "0123456789"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "id": 13,
+      "read": "0123456789"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "id": 14,
+      "read": "0123456789"
+    },
+    {
+      "from": 12,
+      "to": 16,
+      "id": 15,
+      "read": "0123456789"
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "id": 16,
+      "read": "0123456789"
+    },
+    {
+      "from": 18,
+      "to": 17,
+      "id": 17,
+      "read": "0123456789"
+    },
+    {
+      "from": 15,
+      "to": 19,
+      "id": 18,
+      "read": "0123456789"
+    },
+    {
+      "from": 19,
+      "to": 17,
+      "id": 19,
+      "read": "0123456789"
+    },
+    {
+      "from": 17,
+      "to": 20,
+      "id": 20,
+      "read": "-"
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "id": 21,
+      "read": "0123456789x"
+    },
+    {
+      "from": 17,
+      "to": 22,
+      "id": 22,
+      "read": "0123456789x"
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "id": 24,
+      "read": "0123456789"
+    },
+    {
+      "from": 11,
+      "to": 23,
+      "id": 26,
+      "read": "."
+    },
+    {
+      "from": 24,
+      "to": 17,
+      "id": 27,
+      "read": "0123456789"
+    },
+    {
+      "from": 22,
+      "to": 25,
+      "id": 28,
+      "read": "0123456789"
+    },
+    {
+      "from": 22,
+      "to": 26,
+      "id": 29,
+      "read": "-"
+    },
+    {
+      "from": 26,
+      "to": 25,
+      "id": 30,
+      "read": "0123456789"
+    },
+    {
+      "from": 25,
+      "to": 27,
+      "id": 31,
+      "read": "0123456789"
+    }
+  ],
+  "comments": [],
+  "simResult": [],
+  "tests": {
+    "single": "",
+    "batch": [
+      ""
+    ]
+  },
+  "initialState": 0,
+  "meta": {
+    "name": "Muddy Fountain",
+    "dateCreated": 1739918141910,
+    "dateEdited": 1739918307751,
+    "version": "1.0.0",
+    "automatariumVersion": "1.0.0"
+  },
+  "config": {
+    "type": "FSA",
+    "statePrefix": "q",
+    "orOperator": "|",
+    "acceptanceCriteria": "both",
+    "color": "orange"
+  }
+}

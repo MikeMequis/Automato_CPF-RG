@@ -26,8 +26,14 @@
                         <div class="card-content">
                             <span class="card-title">Resultado</span>
                             <p>CPF/RG informado: <strong th:text="${cpf_rg}"></strong></p>
-                            <p th:if="${valido}" class="valid">CPF/RG válido!</p>
-                            <p th:unless="${valido}" class="invalid">CPF/RG inválido!</p>
+
+                            <p th:if="${valido}" class="valid">
+                                Documento válido! Tipo: <strong th:text="${tipoDocumento}"></strong>
+                            </p>
+                            
+                            <p th:unless="${valido}" class="invalid">
+                                CPF/RG inválido!
+                            </p>
                         </div>
                         <div class="card-action">
                             <a href="/" class="btn waves-effect waves-light">Voltar</a>
@@ -38,12 +44,11 @@
         </div>
     </main>
 
-    <!-- Scripts do Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
-            M.AutoInit(); // Inicializa componentes do Materialize
+            M.AutoInit();
         });
     </script>
 </body>

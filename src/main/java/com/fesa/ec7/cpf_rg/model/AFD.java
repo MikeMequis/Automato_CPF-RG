@@ -10,27 +10,26 @@ public class AFD {
 
     public AFD() {}
 
-    public void createAutomatum() {
+    public void createAutomaton() {
         // Criando os estados
         State[] states = new State[28];
         for (int i = 0; i < 28; i++) {
             states[i] = new State(i);
         }
 
-        // Estados finais
-        finalStates.put(states[21], true); // State 21 é final
-        finalStates.put(states[22], true); // State 22 é final
-        finalStates.put(states[27], true); // State 27 é final
+        // Definindo os estados finais
+        finalStates.put(states[21], true);
+        finalStates.put(states[22], true);
+        finalStates.put(states[27], true);
 
-        // Definindo estado inicial
         initialState = states[0];
 
-        // Transições para dígitos (0-9)
+        // Transições que leem dígitos (0-9)
         for (char c = '0'; c <= '9'; c++) {
             addTransition(states[0], c, states[1]);
             addTransition(states[1], c, states[2]);
-            addTransition(states[2], c, states[3]);
             addTransition(states[2], c, states[4]);
+            addTransition(states[3], c, states[6]);
             addTransition(states[4], c, states[5]);
             addTransition(states[4], c, states[13]);
             addTransition(states[13], c, states[14]);
@@ -46,9 +45,8 @@ public class AFD {
             addTransition(states[18], c, states[17]);
             addTransition(states[15], c, states[19]);
             addTransition(states[19], c, states[17]);
-            addTransition(states[17], c, states[20]);
-            addTransition(states[20], c, states[21]);
             addTransition(states[17], c, states[22]);
+            addTransition(states[20], c, states[21]);
             addTransition(states[22], c, states[25]);
             addTransition(states[25], c, states[27]);
             addTransition(states[23], c, states[24]);
@@ -56,20 +54,17 @@ public class AFD {
             addTransition(states[26], c, states[25]);
         }
 
-        // Transições para traço (-)
-        addTransition(states[2], '-', states[3]);
-        addTransition(states[3], '-', states[6]);
-        addTransition(states[5], '-', states[5]);
-        addTransition(states[8], '-', states[12]);
-        addTransition(states[12], '-', states[16]);
+        // Transições com caracteres específicos
+        addTransition(states[2], '.', states[3]);
+        addTransition(states[4], '.', states[5]);
+        addTransition(states[8], '.', states[12]);
+        addTransition(states[11], '.', states[23]);
+
         addTransition(states[17], '-', states[20]);
         addTransition(states[22], '-', states[26]);
-        addTransition(states[11], '-', states[23]);
-        addTransition(states[23], '-', states[24]);
 
-        // Transições para 'x'
         addTransition(states[20], 'x', states[21]);
-        addTransition(states[17], 'x', states[22]);
+        addTransition(states[17], 'x', states[22]); 
     }
 
     protected void addTransition(State currentState, char character, State nextState) {
