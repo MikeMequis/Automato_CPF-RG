@@ -6,14 +6,12 @@ Este projeto é uma aplicação Spring Boot desenvolvida em Java que tem como ob
 
 - **Validação de CPF e RG**: O sistema valida se o número de documento inserido é um CPF ou RG válido.
 - **Interface**: Uma página inicial com um campo para inserção do documento e outro para exibir o resultado da validação.
-- **Autômato**: Utilização de um autômato para realizar a validação dos documentos.
+- **Autômato**: Uso de um autômato para realizar a validação do documento recebido.
 
 ## Estrutura do Projeto
 
-O projeto está organizado da seguinte forma:
-
-- **src/main/java**: Contém o código fonte da aplicação Spring Boot.
-- **src/main/resources**: Contém os recursos estáticos, como templates HTML, imagens e arquivos JSON.
+- **src/main/java**: Contém o código fonte da aplicação Spring Boot, contendo a Controller principal e autômato.
+- **src/main/resources**: Contém os recursos estáticos, no caso, as páginas HTML.
 
 ## Como Executar o Projeto
 
