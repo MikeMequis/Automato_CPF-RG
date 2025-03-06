@@ -3,7 +3,7 @@ package com.fesa.ec7.cpf_rg.model;
 public class Validator {
     public static String validar(String input, AFD automaton) {
         State currentState = automaton.getInitialState();
-        
+
         for (char c : input.toCharArray()) {
             currentState = automaton.getNextState(currentState, c);
             if (currentState == State.INVALID) {

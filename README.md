@@ -4,7 +4,7 @@ Este projeto é uma aplicação Spring Boot desenvolvida em Java que tem como ob
 
 ## Funcionalidades
 
-- **Validação de CPF e RG**: O sistema valida se o número de documento inserido é um CPF ou RG válido.
+- **Validação de CPF e RG**: O sistema valida se o formato do número de documento inserido é um CPF ou RG válido.
 - **Interface**: Uma página inicial com um campo para inserção do documento e outro para exibir o resultado da validação.
 - **Autômato**: Uso de um autômato para realizar a validação do documento recebido.
 
